@@ -1,0 +1,14 @@
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\modelo.dll.config
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\modelo.dll
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\modelo.pdb
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\comun.dll
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\EntityFramework.dll
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\EntityFramework.SqlServer.dll
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\comun.pdb
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\EntityFramework.xml
+C:\DevFULLSTACK\webapi\webapi\modelo\bin\Debug\EntityFramework.SqlServer.xml
+C:\DevFULLSTACK\webapi\webapi\modelo\obj\Debug\modelo.csproj.AssemblyReference.cache
+C:\DevFULLSTACK\webapi\webapi\modelo\obj\Debug\modelo.csproj.CoreCompileInputs.cache
+C:\DevFULLSTACK\webapi\webapi\modelo\obj\Debug\modelo.csproj.Up2Date
+C:\DevFULLSTACK\webapi\webapi\modelo\obj\Debug\modelo.dll
+C:\DevFULLSTACK\webapi\webapi\modelo\obj\Debug\modelo.pdb

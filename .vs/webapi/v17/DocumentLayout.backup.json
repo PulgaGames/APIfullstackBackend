@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DevFULLSTACK\\webapi\\webapi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A247382F-57F8-402A-B2DB-59EEBED2B34E}|modelo\\modelo.csproj|c:\\devfullstack\\webapi\\webapi\\modelo\\modelos\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{A247382F-57F8-402A-B2DB-59EEBED2B34E}|modelo\\modelo.csproj|solutionrelative:modelo\\modelos\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CAF0A51-B537-4AE1-8785-7F6CE42335BD}|webapi\\webapi.csproj|c:\\devfullstack\\webapi\\webapi\\webapi\\controllers\\egresocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAF0A51-B537-4AE1-8785-7F6CE42335BD}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\egresocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7335B1A-9D91-42B6-970F-151C0A0BCBF0}|comun\\comun.csproj|c:\\devfullstack\\webapi\\webapi\\comun\\viewmodels\\egresovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7335B1A-9D91-42B6-970F-151C0A0BCBF0}|comun\\comun.csproj|solutionrelative:comun\\viewmodels\\egresovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7335B1A-9D91-42B6-970F-151C0A0BCBF0}|comun\\comun.csproj|c:\\devfullstack\\webapi\\webapi\\comun\\viewmodels\\ingresovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7335B1A-9D91-42B6-970F-151C0A0BCBF0}|comun\\comun.csproj|solutionrelative:comun\\viewmodels\\ingresovmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AE961D3-01B1-4687-BC64-1740C1F71690}|logicanegocio\\logicanegocio.csproj|c:\\devfullstack\\webapi\\webapi\\logicanegocio\\bll\\egresobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AE961D3-01B1-4687-BC64-1740C1F71690}|logicanegocio\\logicanegocio.csproj|solutionrelative:logicanegocio\\bll\\egresobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11710A6C-F33F-43C6-9705-D4632CBE2BBC}|accesodatos\\accesodatos.csproj|c:\\devfullstack\\webapi\\webapi\\accesodatos\\dal\\egresodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11710A6C-F33F-43C6-9705-D4632CBE2BBC}|accesodatos\\accesodatos.csproj|solutionrelative:accesodatos\\dal\\egresodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7335B1A-9D91-42B6-970F-151C0A0BCBF0}|comun\\comun.csproj|c:\\devfullstack\\webapi\\webapi\\comun\\viewmodels\\pacientevmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7335B1A-9D91-42B6-970F-151C0A0BCBF0}|comun\\comun.csproj|solutionrelative:comun\\viewmodels\\pacientevmr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A247382F-57F8-402A-B2DB-59EEBED2B34E}|modelo\\modelo.csproj|c:\\devfullstack\\webapi\\webapi\\modelo\\metadatos\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A247382F-57F8-402A-B2DB-59EEBED2B34E}|modelo\\modelo.csproj|solutionrelative:modelo\\metadatos\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11710A6C-F33F-43C6-9705-D4632CBE2BBC}|accesodatos\\accesodatos.csproj|c:\\devfullstack\\webapi\\webapi\\accesodatos\\dal\\pacientedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11710A6C-F33F-43C6-9705-D4632CBE2BBC}|accesodatos\\accesodatos.csproj|solutionrelative:accesodatos\\dal\\pacientedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CAF0A51-B537-4AE1-8785-7F6CE42335BD}|webapi\\webapi.csproj|C:\\DevFULLSTACK\\webapi\\webapi\\webapi\\controllers\\ingresocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CAF0A51-B537-4AE1-8785-7F6CE42335BD}|webapi\\webapi.csproj|solutionrelative:webapi\\controllers\\ingresocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\modelo\\modelos\\Model1.edmx",
+              "RelativeDocumentMoniker": "modelo\\modelos\\Model1.edmx",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\modelo\\modelos\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "modelo\\modelos\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-05-23T16:48:48.932Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "pacientevmr.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\comun\\viewmodels\\pacientevmr.cs",
+              "RelativeDocumentMoniker": "comun\\viewmodels\\pacientevmr.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\comun\\viewmodels\\pacientevmr.cs",
+              "RelativeToolTip": "comun\\viewmodels\\pacientevmr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:22:51.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "paciente.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\modelo\\metadatos\\paciente.cs",
+              "RelativeDocumentMoniker": "modelo\\metadatos\\paciente.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\modelo\\metadatos\\paciente.cs",
+              "RelativeToolTip": "modelo\\metadatos\\paciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:22:44.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "pacientedal.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\accesodatos\\dal\\pacientedal.cs",
+              "RelativeDocumentMoniker": "accesodatos\\dal\\pacientedal.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\accesodatos\\dal\\pacientedal.cs",
+              "RelativeToolTip": "accesodatos\\dal\\pacientedal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:22:36.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "egresodal.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\accesodatos\\dal\\egresodal.cs",
+              "RelativeDocumentMoniker": "accesodatos\\dal\\egresodal.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\accesodatos\\dal\\egresodal.cs",
+              "RelativeToolTip": "accesodatos\\dal\\egresodal.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAGIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:12:21.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "egresoBLL.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\logicanegocio\\BLL\\egresoBLL.cs",
+              "RelativeDocumentMoniker": "logicanegocio\\BLL\\egresoBLL.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\logicanegocio\\BLL\\egresoBLL.cs",
+              "RelativeToolTip": "logicanegocio\\BLL\\egresoBLL.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:09:16.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "egresoController.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\webapi\\Controllers\\egresoController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\egresoController.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\webapi\\Controllers\\egresoController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\egresoController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:03:27.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "egresovmr.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\comun\\viewmodels\\egresovmr.cs",
+              "RelativeDocumentMoniker": "comun\\viewmodels\\egresovmr.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\comun\\viewmodels\\egresovmr.cs",
+              "RelativeToolTip": "comun\\viewmodels\\egresovmr.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T16:06:57.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ingresovmr.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\comun\\viewmodels\\ingresovmr.cs",
+              "RelativeDocumentMoniker": "comun\\viewmodels\\ingresovmr.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\comun\\viewmodels\\ingresovmr.cs",
+              "RelativeToolTip": "comun\\viewmodels\\ingresovmr.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T04:32:47.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ingresoController.cs",
+              "DocumentMoniker": "C:\\DevFULLSTACK\\webapi\\webapi\\webapi\\Controllers\\ingresoController.cs",
+              "RelativeDocumentMoniker": "webapi\\Controllers\\ingresoController.cs",
+              "ToolTip": "C:\\DevFULLSTACK\\webapi\\webapi\\webapi\\Controllers\\ingresoController.cs",
+              "RelativeToolTip": "webapi\\Controllers\\ingresoController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADIAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T14:38:54.613Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

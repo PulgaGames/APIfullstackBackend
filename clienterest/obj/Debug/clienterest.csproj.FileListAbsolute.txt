@@ -1,0 +1,14 @@
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\clienterest.dll
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\clienterest.pdb
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\comun.dll
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\modelo.dll
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\EntityFramework.dll
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\comun.pdb
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\modelo.pdb
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\modelo.dll.config
+C:\DevFULLSTACK\webapi\webapi\clienterest\bin\Debug\EntityFramework.xml
+C:\DevFULLSTACK\webapi\webapi\clienterest\obj\Debug\clienterest.csproj.AssemblyReference.cache
+C:\DevFULLSTACK\webapi\webapi\clienterest\obj\Debug\clienterest.csproj.CoreCompileInputs.cache
+C:\DevFULLSTACK\webapi\webapi\clienterest\obj\Debug\clienter.34CEDF53.Up2Date
+C:\DevFULLSTACK\webapi\webapi\clienterest\obj\Debug\clienterest.dll
+C:\DevFULLSTACK\webapi\webapi\clienterest\obj\Debug\clienterest.pdb

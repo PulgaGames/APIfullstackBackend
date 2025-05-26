@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hospitalModelStoreContainer" CdmEntityContainer="hospitalEntities">
+    <EntitySetMapping Name="egreso">
+      <EntityTypeMapping TypeName="hospitalModel.egreso">
+        <MappingFragment StoreEntitySet="egreso">
+          <ScalarProperty Name="pacienteid" ColumnName="pacienteid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="tratamiento" ColumnName="tratamiento" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="borrado" ColumnName="borrado" />
+          <ScalarProperty Name="medicoid" ColumnName="medicoid" />
+          <ScalarProperty Name="ingresoid" ColumnName="ingresoid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ingreso">
+      <EntityTypeMapping TypeName="hospitalModel.ingreso">
+        <MappingFragment StoreEntitySet="ingreso">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="numerosala" ColumnName="numerosala" />
+          <ScalarProperty Name="numerocama" ColumnName="numerocama" />
+          <ScalarProperty Name="diagnostico" ColumnName="diagnostico" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="borrado" ColumnName="borrado" />
+          <ScalarProperty Name="medicoid" ColumnName="medicoid" />
+          <ScalarProperty Name="pacienteid" ColumnName="pacienteid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="medico">
+      <EntityTypeMapping TypeName="hospitalModel.medico">
+        <MappingFragment StoreEntitySet="medico">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="apellidopat" ColumnName="apellidopat" />
+          <ScalarProperty Name="apellidomat" ColumnName="apellidomat" />
+          <ScalarProperty Name="esespecialista" ColumnName="esespecialista" />
+          <ScalarProperty Name="habilitado" ColumnName="habilitado" />
+          <ScalarProperty Name="borrado" ColumnName="borrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paciente">
+      <EntityTypeMapping TypeName="hospitalModel.paciente">
+        <MappingFragment StoreEntitySet="paciente">
+          <ScalarProperty Name="apellidomar" ColumnName="apellidomar" />
+          <ScalarProperty Name="apellidopat" ColumnName="apellidopat" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="direccion" ColumnName="direccion" />
+          <ScalarProperty Name="celular" ColumnName="celular" />
+          <ScalarProperty Name="correo" ColumnName="correo" />
+          <ScalarProperty Name="borrado" ColumnName="borrado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

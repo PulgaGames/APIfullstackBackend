@@ -1,0 +1,17 @@
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\accesodatos.dll.config
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\accesodatos.dll
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\accesodatos.pdb
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\comun.dll
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\EntityFramework.dll
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\EntityFramework.SqlServer.dll
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\modelo.dll
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\comun.pdb
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\modelo.pdb
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\modelo.dll.config
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\EntityFramework.xml
+C:\DevFULLSTACK\webapi\webapi\accesodatos\bin\Debug\EntityFramework.SqlServer.xml
+C:\DevFULLSTACK\webapi\webapi\accesodatos\obj\Debug\accesodatos.csproj.AssemblyReference.cache
+C:\DevFULLSTACK\webapi\webapi\accesodatos\obj\Debug\accesodatos.csproj.CoreCompileInputs.cache
+C:\DevFULLSTACK\webapi\webapi\accesodatos\obj\Debug\accesoda.022C4F74.Up2Date
+C:\DevFULLSTACK\webapi\webapi\accesodatos\obj\Debug\accesodatos.dll
+C:\DevFULLSTACK\webapi\webapi\accesodatos\obj\Debug\accesodatos.pdb

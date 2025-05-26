@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hospitalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="egreso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="tratamiento" Type="varchar(max)" />
+    <Property Name="monto" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="borrado" Type="bit" Nullable="false" />
+    <Property Name="medicoid" Type="bigint" Nullable="false" />
+    <Property Name="ingresoid" Type="bigint" Nullable="false" />
+    <Property Name="pacienteid" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ingreso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="numerosala" Type="int" Nullable="false" />
+    <Property Name="numerocama" Type="int" Nullable="false" />
+    <Property Name="diagnostico" Type="varchar(max)" Nullable="false" />
+    <Property Name="observacion" Type="varchar(max)" />
+    <Property Name="borrado" Type="bit" Nullable="false" />
+    <Property Name="medicoid" Type="bigint" Nullable="false" />
+    <Property Name="pacienteid" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="medico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cedula" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellidopat" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellidomat" Type="varchar" MaxLength="50" />
+    <Property Name="esespecialista" Type="bit" Nullable="false" />
+    <Property Name="habilitado" Type="bit" Nullable="false" />
+    <Property Name="borrado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="paciente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cedula" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellidopat" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="apellidomar" Type="varchar" MaxLength="50" />
+    <Property Name="direccion" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="celular" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="borrado" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_egreso_ingreso">
+    <End Role="ingreso" Type="Self.ingreso" Multiplicity="1" />
+    <End Role="egreso" Type="Self.egreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ingreso">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="egreso">
+        <PropertyRef Name="ingresoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_egreso_medico">
+    <End Role="medico" Type="Self.medico" Multiplicity="1" />
+    <End Role="egreso" Type="Self.egreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="medico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="egreso">
+        <PropertyRef Name="medicoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_egreso_paciente">
+    <End Role="paciente" Type="Self.paciente" Multiplicity="1" />
+    <End Role="egreso" Type="Self.egreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="egreso">
+        <PropertyRef Name="pacienteid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ingreso_medico">
+    <End Role="medico" Type="Self.medico" Multiplicity="1" />
+    <End Role="ingreso" Type="Self.ingreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="medico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ingreso">
+        <PropertyRef Name="medicoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ingreso_paciente">
+    <End Role="paciente" Type="Self.paciente" Multiplicity="1" />
+    <End Role="ingreso" Type="Self.ingreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ingreso">
+        <PropertyRef Name="pacienteid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="hospitalModelStoreContainer">
+    <EntitySet Name="egreso" EntityType="Self.egreso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ingreso" EntityType="Self.ingreso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="medico" EntityType="Self.medico" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="paciente" EntityType="Self.paciente" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_egreso_ingreso" Association="Self.FK_egreso_ingreso">
+      <End Role="ingreso" EntitySet="ingreso" />
+      <End Role="egreso" EntitySet="egreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_egreso_medico" Association="Self.FK_egreso_medico">
+      <End Role="medico" EntitySet="medico" />
+      <End Role="egreso" EntitySet="egreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_egreso_paciente" Association="Self.FK_egreso_paciente">
+      <End Role="paciente" EntitySet="paciente" />
+      <End Role="egreso" EntitySet="egreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ingreso_medico" Association="Self.FK_ingreso_medico">
+      <End Role="medico" EntitySet="medico" />
+      <End Role="ingreso" EntitySet="ingreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ingreso_paciente" Association="Self.FK_ingreso_paciente">
+      <End Role="paciente" EntitySet="paciente" />
+      <End Role="ingreso" EntitySet="ingreso" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

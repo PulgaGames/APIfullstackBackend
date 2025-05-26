@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hospitalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="egreso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tratamiento" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="monto" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="borrado" Type="Boolean" Nullable="false" />
+    <Property Name="medicoid" Type="Int64" Nullable="false" />
+    <Property Name="ingresoid" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ingreso" Relationship="Self.FK_egreso_ingreso" FromRole="egreso" ToRole="ingreso" />
+    <NavigationProperty Name="medico" Relationship="Self.FK_egreso_medico" FromRole="egreso" ToRole="medico" />
+    <Property Name="pacienteid" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="paciente" Relationship="hospitalModel.FK_egreso_paciente" FromRole="egreso" ToRole="paciente" />
+  </EntityType>
+  <EntityType Name="ingreso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="numerosala" Type="Int32" Nullable="false" />
+    <Property Name="numerocama" Type="Int32" Nullable="false" />
+    <Property Name="diagnostico" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="borrado" Type="Boolean" Nullable="false" />
+    <Property Name="medicoid" Type="Int64" Nullable="false" />
+    <Property Name="pacienteid" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="egreso" Relationship="Self.FK_egreso_ingreso" FromRole="ingreso" ToRole="egreso" />
+    <NavigationProperty Name="medico" Relationship="Self.FK_ingreso_medico" FromRole="ingreso" ToRole="medico" />
+    <NavigationProperty Name="paciente" Relationship="Self.FK_ingreso_paciente" FromRole="ingreso" ToRole="paciente" />
+  </EntityType>
+  <EntityType Name="medico">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidopat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidomat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="esespecialista" Type="Boolean" Nullable="false" />
+    <Property Name="habilitado" Type="Boolean" Nullable="false" />
+    <Property Name="borrado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="egreso" Relationship="Self.FK_egreso_medico" FromRole="medico" ToRole="egreso" />
+    <NavigationProperty Name="ingreso" Relationship="Self.FK_ingreso_medico" FromRole="medico" ToRole="ingreso" />
+  </EntityType>
+  <EntityType Name="paciente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cedula" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="direccion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="celular" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="borrado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ingreso" Relationship="Self.FK_ingreso_paciente" FromRole="paciente" ToRole="ingreso" />
+    <Property Name="apellidopat" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="apellidomar" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="egreso" Relationship="hospitalModel.FK_egreso_paciente" FromRole="paciente" ToRole="egreso" />
+  </EntityType>
+  <Association Name="FK_egreso_ingreso">
+    <End Role="ingreso" Type="Self.ingreso" Multiplicity="1" />
+    <End Role="egreso" Type="Self.egreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ingreso">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="egreso">
+        <PropertyRef Name="ingresoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_egreso_medico">
+    <End Role="medico" Type="Self.medico" Multiplicity="1" />
+    <End Role="egreso" Type="Self.egreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="medico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="egreso">
+        <PropertyRef Name="medicoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ingreso_medico">
+    <End Role="medico" Type="Self.medico" Multiplicity="1" />
+    <End Role="ingreso" Type="Self.ingreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="medico">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ingreso">
+        <PropertyRef Name="medicoid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ingreso_paciente">
+    <End Role="paciente" Type="Self.paciente" Multiplicity="1" />
+    <End Role="ingreso" Type="Self.ingreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ingreso">
+        <PropertyRef Name="pacienteid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="hospitalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="egreso" EntityType="Self.egreso" />
+    <EntitySet Name="ingreso" EntityType="Self.ingreso" />
+    <EntitySet Name="medico" EntityType="Self.medico" />
+    <EntitySet Name="paciente" EntityType="Self.paciente" />
+    <AssociationSet Name="FK_egreso_ingreso" Association="Self.FK_egreso_ingreso">
+      <End Role="ingreso" EntitySet="ingreso" />
+      <End Role="egreso" EntitySet="egreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_egreso_medico" Association="Self.FK_egreso_medico">
+      <End Role="medico" EntitySet="medico" />
+      <End Role="egreso" EntitySet="egreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ingreso_medico" Association="Self.FK_ingreso_medico">
+      <End Role="medico" EntitySet="medico" />
+      <End Role="ingreso" EntitySet="ingreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ingreso_paciente" Association="Self.FK_ingreso_paciente">
+      <End Role="paciente" EntitySet="paciente" />
+      <End Role="ingreso" EntitySet="ingreso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_egreso_paciente" Association="hospitalModel.FK_egreso_paciente">
+      <End Role="paciente" EntitySet="paciente" />
+      <End Role="egreso" EntitySet="egreso" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_egreso_paciente">
+    <End Type="hospitalModel.paciente" Role="paciente" Multiplicity="1" />
+    <End Type="hospitalModel.egreso" Role="egreso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paciente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="egreso">
+        <PropertyRef Name="pacienteid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
